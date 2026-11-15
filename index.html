@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08090e">
+  <title>Lamp Toggle Login Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="scene">
+    <h1>Lamp Toggle Login Form</h1>
+
+    <section class="lamp-area" aria-label="Interactive hanging lamp">
+      <button class="lamp-button" id="lampToggle" type="button"
+        aria-label="Turn lamp off" aria-pressed="true" title="Toggle lamp">
+        <span class="cord"></span>
+        <span class="shade"></span>
+        <span class="bulb"></span>
+        <span class="pull-cord"></span>
+        <span class="pull-knob"></span>
+      </button>
+      <div class="light-beam" aria-hidden="true"></div>
+      <span class="light-glow" aria-hidden="true"></span>
+    </section>
+
+    <section class="login-card" id="loginCard">
+      <h2>Welcome</h2>
+      <form id="loginForm">
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" autocomplete="username" required>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+        <button class="sign-in" type="submit">Sign In</button>
+        <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <p class="hint">Click the lamp or pull switch to toggle the light</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
